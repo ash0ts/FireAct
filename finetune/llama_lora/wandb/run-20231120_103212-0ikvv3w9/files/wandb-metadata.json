@@ -1,0 +1,123 @@
+{
+    "os": "Linux-5.10.0-26-cloud-amd64-x86_64-with-glibc2.31",
+    "python": "3.9.18",
+    "heartbeatAt": "2023-11-20T10:32:12.384753",
+    "startedAt": "2023-11-20T10:32:12.025240",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--base_model",
+        "meta-llama/Llama-2-13b-chat-hf",
+        "--data_path",
+        "../../data/finetune/alpaca_format/hotpotqa.json",
+        "--micro_batch_size",
+        "8",
+        "--num_epochs",
+        "3",
+        "--output_dir",
+        "../../models/lora/fireact-llama-2-13b",
+        "--val_set_size",
+        "0.01",
+        "--cutoff_len",
+        "512"
+    ],
+    "state": "running",
+    "program": "/home/anish/FireAct/finetune/llama_lora/finetune.py",
+    "codePathLocal": "finetune.py",
+    "codePath": "finetune/llama_lora/finetune.py",
+    "git": {
+        "remote": "https://github.com/ash0ts/FireAct.git",
+        "commit": "7fed5be2bb56d4a33978a805ed170fec10879db4"
+    },
+    "email": null,
+    "root": "/home/anish/FireAct",
+    "host": "anish-fireact-wandb",
+    "username": "anishshah",
+    "executable": "/opt/conda/envs/fireact/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2200.2279999999996,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.228,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 984.0530128479004,
+            "used": 107.70180130004883
+        }
+    },
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-SXM4-40GB",
+            "memory_total": 42949672960
+        }
+    ],
+    "memory": {
+        "total": 83.48265838623047
+    }
+}

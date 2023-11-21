@@ -1,0 +1,780 @@
+diff --git a/.gitignore b/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/LICENSE b/LICENSE
+old mode 100644
+new mode 100755
+diff --git a/README.md b/README.md
+old mode 100644
+new mode 100755
+diff --git a/data/.gitkeep b/data/.gitkeep
+old mode 100644
+new mode 100755
+diff --git a/data/README.md b/data/README.md
+old mode 100644
+new mode 100755
+diff --git a/data/bamboogle/test.csv b/data/bamboogle/test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/finetune/alpaca_format/hotpotqa.json b/data/finetune/alpaca_format/hotpotqa.json
+old mode 100644
+new mode 100755
+diff --git a/data/finetune/alpaca_format/hotpotqa_multimethod.json b/data/finetune/alpaca_format/hotpotqa_multimethod.json
+old mode 100644
+new mode 100755
+diff --git a/data/finetune/alpaca_format/multitask.json b/data/finetune/alpaca_format/multitask.json
+old mode 100644
+new mode 100755
+diff --git a/data/finetune/alpaca_format/multitask_multimethod.json b/data/finetune/alpaca_format/multitask_multimethod.json
+old mode 100644
+new mode 100755
+diff --git a/data/finetune/gpt_format/hotpotqa.jsonl b/data/finetune/gpt_format/hotpotqa.jsonl
+old mode 100644
+new mode 100755
+diff --git a/data/finetune/gpt_format/hotpotqa_multimethod.jsonl b/data/finetune/gpt_format/hotpotqa_multimethod.jsonl
+old mode 100644
+new mode 100755
+diff --git a/data/finetune/gpt_format/multitask.jsonl b/data/finetune/gpt_format/multitask.jsonl
+old mode 100644
+new mode 100755
+diff --git a/data/finetune/gpt_format/multitask_multimethod.jsonl b/data/finetune/gpt_format/multitask_multimethod.jsonl
+old mode 100644
+new mode 100755
+diff --git a/data/hotpotqa/dev.json b/data/hotpotqa/dev.json
+old mode 100644
+new mode 100755
+diff --git a/data/hotpotqa/test.json b/data/hotpotqa/test.json
+old mode 100644
+new mode 100755
+diff --git a/data/hotpotqa/train.json b/data/hotpotqa/train.json
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/README.txt b/data/mmlu/README.txt
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/abstract_algebra_dev.csv b/data/mmlu/dev/abstract_algebra_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/anatomy_dev.csv b/data/mmlu/dev/anatomy_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/astronomy_dev.csv b/data/mmlu/dev/astronomy_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/business_ethics_dev.csv b/data/mmlu/dev/business_ethics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/clinical_knowledge_dev.csv b/data/mmlu/dev/clinical_knowledge_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/college_biology_dev.csv b/data/mmlu/dev/college_biology_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/college_chemistry_dev.csv b/data/mmlu/dev/college_chemistry_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/college_computer_science_dev.csv b/data/mmlu/dev/college_computer_science_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/college_mathematics_dev.csv b/data/mmlu/dev/college_mathematics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/college_medicine_dev.csv b/data/mmlu/dev/college_medicine_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/college_physics_dev.csv b/data/mmlu/dev/college_physics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/computer_security_dev.csv b/data/mmlu/dev/computer_security_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/conceptual_physics_dev.csv b/data/mmlu/dev/conceptual_physics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/econometrics_dev.csv b/data/mmlu/dev/econometrics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/electrical_engineering_dev.csv b/data/mmlu/dev/electrical_engineering_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/elementary_mathematics_dev.csv b/data/mmlu/dev/elementary_mathematics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/formal_logic_dev.csv b/data/mmlu/dev/formal_logic_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/global_facts_dev.csv b/data/mmlu/dev/global_facts_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_biology_dev.csv b/data/mmlu/dev/high_school_biology_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_chemistry_dev.csv b/data/mmlu/dev/high_school_chemistry_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_computer_science_dev.csv b/data/mmlu/dev/high_school_computer_science_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_european_history_dev.csv b/data/mmlu/dev/high_school_european_history_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_geography_dev.csv b/data/mmlu/dev/high_school_geography_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_government_and_politics_dev.csv b/data/mmlu/dev/high_school_government_and_politics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_macroeconomics_dev.csv b/data/mmlu/dev/high_school_macroeconomics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_mathematics_dev.csv b/data/mmlu/dev/high_school_mathematics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_microeconomics_dev.csv b/data/mmlu/dev/high_school_microeconomics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_physics_dev.csv b/data/mmlu/dev/high_school_physics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_psychology_dev.csv b/data/mmlu/dev/high_school_psychology_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_statistics_dev.csv b/data/mmlu/dev/high_school_statistics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_us_history_dev.csv b/data/mmlu/dev/high_school_us_history_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/high_school_world_history_dev.csv b/data/mmlu/dev/high_school_world_history_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/human_aging_dev.csv b/data/mmlu/dev/human_aging_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/human_sexuality_dev.csv b/data/mmlu/dev/human_sexuality_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/international_law_dev.csv b/data/mmlu/dev/international_law_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/jurisprudence_dev.csv b/data/mmlu/dev/jurisprudence_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/logical_fallacies_dev.csv b/data/mmlu/dev/logical_fallacies_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/machine_learning_dev.csv b/data/mmlu/dev/machine_learning_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/management_dev.csv b/data/mmlu/dev/management_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/marketing_dev.csv b/data/mmlu/dev/marketing_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/medical_genetics_dev.csv b/data/mmlu/dev/medical_genetics_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/miscellaneous_dev.csv b/data/mmlu/dev/miscellaneous_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/moral_disputes_dev.csv b/data/mmlu/dev/moral_disputes_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/moral_scenarios_dev.csv b/data/mmlu/dev/moral_scenarios_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/nutrition_dev.csv b/data/mmlu/dev/nutrition_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/philosophy_dev.csv b/data/mmlu/dev/philosophy_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/prehistory_dev.csv b/data/mmlu/dev/prehistory_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/professional_accounting_dev.csv b/data/mmlu/dev/professional_accounting_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/professional_law_dev.csv b/data/mmlu/dev/professional_law_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/professional_medicine_dev.csv b/data/mmlu/dev/professional_medicine_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/professional_psychology_dev.csv b/data/mmlu/dev/professional_psychology_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/public_relations_dev.csv b/data/mmlu/dev/public_relations_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/security_studies_dev.csv b/data/mmlu/dev/security_studies_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/sociology_dev.csv b/data/mmlu/dev/sociology_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/us_foreign_policy_dev.csv b/data/mmlu/dev/us_foreign_policy_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/virology_dev.csv b/data/mmlu/dev/virology_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/dev/world_religions_dev.csv b/data/mmlu/dev/world_religions_dev.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/possibly_contaminated_urls.txt b/data/mmlu/possibly_contaminated_urls.txt
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/abstract_algebra_test.csv b/data/mmlu/test/abstract_algebra_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/anatomy_test.csv b/data/mmlu/test/anatomy_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/astronomy_test.csv b/data/mmlu/test/astronomy_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/business_ethics_test.csv b/data/mmlu/test/business_ethics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/clinical_knowledge_test.csv b/data/mmlu/test/clinical_knowledge_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/college_biology_test.csv b/data/mmlu/test/college_biology_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/college_chemistry_test.csv b/data/mmlu/test/college_chemistry_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/college_computer_science_test.csv b/data/mmlu/test/college_computer_science_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/college_mathematics_test.csv b/data/mmlu/test/college_mathematics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/college_medicine_test.csv b/data/mmlu/test/college_medicine_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/college_physics_test.csv b/data/mmlu/test/college_physics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/computer_security_test.csv b/data/mmlu/test/computer_security_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/conceptual_physics_test.csv b/data/mmlu/test/conceptual_physics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/econometrics_test.csv b/data/mmlu/test/econometrics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/electrical_engineering_test.csv b/data/mmlu/test/electrical_engineering_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/elementary_mathematics_test.csv b/data/mmlu/test/elementary_mathematics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/formal_logic_test.csv b/data/mmlu/test/formal_logic_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/global_facts_test.csv b/data/mmlu/test/global_facts_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_biology_test.csv b/data/mmlu/test/high_school_biology_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_chemistry_test.csv b/data/mmlu/test/high_school_chemistry_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_computer_science_test.csv b/data/mmlu/test/high_school_computer_science_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_european_history_test.csv b/data/mmlu/test/high_school_european_history_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_geography_test.csv b/data/mmlu/test/high_school_geography_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_government_and_politics_test.csv b/data/mmlu/test/high_school_government_and_politics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_macroeconomics_test.csv b/data/mmlu/test/high_school_macroeconomics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_mathematics_test.csv b/data/mmlu/test/high_school_mathematics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_microeconomics_test.csv b/data/mmlu/test/high_school_microeconomics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_physics_test.csv b/data/mmlu/test/high_school_physics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_psychology_test.csv b/data/mmlu/test/high_school_psychology_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_statistics_test.csv b/data/mmlu/test/high_school_statistics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_us_history_test.csv b/data/mmlu/test/high_school_us_history_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/high_school_world_history_test.csv b/data/mmlu/test/high_school_world_history_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/human_aging_test.csv b/data/mmlu/test/human_aging_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/human_sexuality_test.csv b/data/mmlu/test/human_sexuality_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/international_law_test.csv b/data/mmlu/test/international_law_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/jurisprudence_test.csv b/data/mmlu/test/jurisprudence_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/logical_fallacies_test.csv b/data/mmlu/test/logical_fallacies_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/machine_learning_test.csv b/data/mmlu/test/machine_learning_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/management_test.csv b/data/mmlu/test/management_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/marketing_test.csv b/data/mmlu/test/marketing_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/medical_genetics_test.csv b/data/mmlu/test/medical_genetics_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/miscellaneous_test.csv b/data/mmlu/test/miscellaneous_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/moral_disputes_test.csv b/data/mmlu/test/moral_disputes_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/moral_scenarios_test.csv b/data/mmlu/test/moral_scenarios_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/nutrition_test.csv b/data/mmlu/test/nutrition_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/philosophy_test.csv b/data/mmlu/test/philosophy_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/prehistory_test.csv b/data/mmlu/test/prehistory_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/professional_accounting_test.csv b/data/mmlu/test/professional_accounting_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/professional_law_test.csv b/data/mmlu/test/professional_law_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/professional_medicine_test.csv b/data/mmlu/test/professional_medicine_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/professional_psychology_test.csv b/data/mmlu/test/professional_psychology_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/public_relations_test.csv b/data/mmlu/test/public_relations_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/security_studies_test.csv b/data/mmlu/test/security_studies_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/sociology_test.csv b/data/mmlu/test/sociology_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/us_foreign_policy_test.csv b/data/mmlu/test/us_foreign_policy_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/virology_test.csv b/data/mmlu/test/virology_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/test/world_religions_test.csv b/data/mmlu/test/world_religions_test.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/train/aux_law_90s.csv b/data/mmlu/train/aux_law_90s.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/abstract_algebra_val.csv b/data/mmlu/val/abstract_algebra_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/anatomy_val.csv b/data/mmlu/val/anatomy_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/astronomy_val.csv b/data/mmlu/val/astronomy_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/business_ethics_val.csv b/data/mmlu/val/business_ethics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/clinical_knowledge_val.csv b/data/mmlu/val/clinical_knowledge_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/college_biology_val.csv b/data/mmlu/val/college_biology_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/college_chemistry_val.csv b/data/mmlu/val/college_chemistry_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/college_computer_science_val.csv b/data/mmlu/val/college_computer_science_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/college_mathematics_val.csv b/data/mmlu/val/college_mathematics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/college_medicine_val.csv b/data/mmlu/val/college_medicine_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/college_physics_val.csv b/data/mmlu/val/college_physics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/computer_security_val.csv b/data/mmlu/val/computer_security_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/conceptual_physics_val.csv b/data/mmlu/val/conceptual_physics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/econometrics_val.csv b/data/mmlu/val/econometrics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/electrical_engineering_val.csv b/data/mmlu/val/electrical_engineering_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/elementary_mathematics_val.csv b/data/mmlu/val/elementary_mathematics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/formal_logic_val.csv b/data/mmlu/val/formal_logic_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/global_facts_val.csv b/data/mmlu/val/global_facts_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_biology_val.csv b/data/mmlu/val/high_school_biology_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_chemistry_val.csv b/data/mmlu/val/high_school_chemistry_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_computer_science_val.csv b/data/mmlu/val/high_school_computer_science_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_european_history_val.csv b/data/mmlu/val/high_school_european_history_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_geography_val.csv b/data/mmlu/val/high_school_geography_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_government_and_politics_val.csv b/data/mmlu/val/high_school_government_and_politics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_macroeconomics_val.csv b/data/mmlu/val/high_school_macroeconomics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_mathematics_val.csv b/data/mmlu/val/high_school_mathematics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_microeconomics_val.csv b/data/mmlu/val/high_school_microeconomics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_physics_val.csv b/data/mmlu/val/high_school_physics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_psychology_val.csv b/data/mmlu/val/high_school_psychology_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_statistics_val.csv b/data/mmlu/val/high_school_statistics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_us_history_val.csv b/data/mmlu/val/high_school_us_history_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/high_school_world_history_val.csv b/data/mmlu/val/high_school_world_history_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/human_aging_val.csv b/data/mmlu/val/human_aging_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/human_sexuality_val.csv b/data/mmlu/val/human_sexuality_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/international_law_val.csv b/data/mmlu/val/international_law_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/jurisprudence_val.csv b/data/mmlu/val/jurisprudence_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/logical_fallacies_val.csv b/data/mmlu/val/logical_fallacies_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/machine_learning_val.csv b/data/mmlu/val/machine_learning_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/management_val.csv b/data/mmlu/val/management_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/marketing_val.csv b/data/mmlu/val/marketing_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/medical_genetics_val.csv b/data/mmlu/val/medical_genetics_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/miscellaneous_val.csv b/data/mmlu/val/miscellaneous_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/moral_disputes_val.csv b/data/mmlu/val/moral_disputes_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/moral_scenarios_val.csv b/data/mmlu/val/moral_scenarios_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/nutrition_val.csv b/data/mmlu/val/nutrition_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/philosophy_val.csv b/data/mmlu/val/philosophy_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/prehistory_val.csv b/data/mmlu/val/prehistory_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/professional_accounting_val.csv b/data/mmlu/val/professional_accounting_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/professional_law_val.csv b/data/mmlu/val/professional_law_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/professional_medicine_val.csv b/data/mmlu/val/professional_medicine_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/professional_psychology_val.csv b/data/mmlu/val/professional_psychology_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/public_relations_val.csv b/data/mmlu/val/public_relations_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/security_studies_val.csv b/data/mmlu/val/security_studies_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/sociology_val.csv b/data/mmlu/val/sociology_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/us_foreign_policy_val.csv b/data/mmlu/val/us_foreign_policy_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/virology_val.csv b/data/mmlu/val/virology_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/mmlu/val/world_religions_val.csv b/data/mmlu/val/world_religions_val.csv
+old mode 100644
+new mode 100755
+diff --git a/data/strategyqa/strategyqa_dev.json b/data/strategyqa/strategyqa_dev.json
+old mode 100644
+new mode 100755
+diff --git a/data/strategyqa/strategyqa_test.json b/data/strategyqa/strategyqa_test.json
+old mode 100644
+new mode 100755
+diff --git a/data/strategyqa/strategyqa_train.json b/data/strategyqa/strategyqa_train.json
+old mode 100644
+new mode 100755
+diff --git a/data/strategyqa/strategyqa_train_filtered.json b/data/strategyqa/strategyqa_train_filtered.json
+old mode 100644
+new mode 100755
+diff --git a/data/strategyqa/strategyqa_train_paragraphs.json b/data/strategyqa/strategyqa_train_paragraphs.json
+old mode 100644
+new mode 100755
+diff --git a/finetune/README.md b/finetune/README.md
+old mode 100644
+new mode 100755
+diff --git a/finetune/gpt/finetune.py b/finetune/gpt/finetune.py
+old mode 100644
+new mode 100755
+diff --git a/finetune/llama_full/finetune.py b/finetune/llama_full/finetune.py
+old mode 100644
+new mode 100755
+diff --git a/finetune/llama_full/utils.py b/finetune/llama_full/utils.py
+old mode 100644
+new mode 100755
+diff --git a/finetune/llama_lora/finetune.py b/finetune/llama_lora/finetune.py
+old mode 100644
+new mode 100755
+index e5a4cc1..cefc755
+--- a/finetune/llama_lora/finetune.py
++++ b/finetune/llama_lora/finetune.py
+@@ -17,6 +17,7 @@ from peft import (
+     get_peft_model,
+     get_peft_model_state_dict,
+ )
++from wandb_callback import WandbPredictionProgressCallback
+ 
+ 
+ def train(
+@@ -198,11 +199,11 @@ def train(
+             num_train_epochs=num_epochs,
+             learning_rate=learning_rate,
+             fp16=True,
+-            logging_steps=10,
++            logging_steps=1,
+             evaluation_strategy="steps" if val_set_size > 0 else "no",
+             save_strategy="steps",
+-            eval_steps=200 if val_set_size > 0 else None,
+-            save_steps=200,
++            # eval_steps=100 if val_set_size > 0 else None,
++            save_steps=100,
+             output_dir=output_dir,
+             save_total_limit=3,
+             load_best_model_at_end=True if val_set_size > 0 else False,
+@@ -215,10 +216,15 @@ def train(
+         ),
+     )
+     model.config.use_cache = False
++    
+ 
+     if torch.__version__ >= "2" and sys.platform != "win32":
+         model = torch.compile(model)
+ 
++    if val_set_size > 0:
++        progress_callback = WandbPredictionProgressCallback(trainer, tokenizer, val_data, 2)
++        trainer.add_callback(progress_callback)
++
+     trainer.train()
+ 
+     model.save_pretrained(output_dir)
+diff --git a/generation.py b/generation.py
+old mode 100644
+new mode 100755
+index 7bcfec7..88b1b7d
+--- a/generation.py
++++ b/generation.py
+@@ -14,6 +14,8 @@ from tasks import get_task
+ from tools import call_tools
+ from tools.search import search_save
+ from datetime import datetime
++import wandb
++import os
+ 
+ def get_fewshot_prompt(promptpath, task=None, chatgpt_format=False):
+     if len(promptpath) == 0:
+@@ -161,6 +163,7 @@ def run(task, idxs, gpts, evaluate=True, alpaca_format=False, chatgpt_format=Tru
+                 
+                 rs[idxs[i]] = r
+                 infos[idxs[i]] = info
++                wandb.log(info)
+         
+         print(f"Time used for actions: {time.time() - old_time}", flush=True)
+         prompts = [prompts[i] for i in range(len(prompts)) if i not in done_ids]
+@@ -198,6 +201,8 @@ def parse_args():
+ 
+ if __name__ == '__main__':
+     args = parse_args()
++    wandb_run = wandb.init(project=os.environ.get("WANDB_PROJECT", "fireact"), config=args)
++    args = wandb.config
+     print(args)
+     task = get_task(args.task, args.task_split)
+     
+@@ -234,4 +239,24 @@ if __name__ == '__main__':
+     em = sum(rs.values()) / len(idxs)
+     print("em", em)
+ 
+-    search_save()
+\ No newline at end of file
++    data_for_table = []
++    for id, info in infos.items():
++        entry = [
++            id, 
++            info.get('reward', None), 
++            info.get('em', None), 
++            info.get('f1', None), 
++            info.get('gt', None), 
++            info.get('pred', None),
++            info.get('traj', None),
++            info.get('traj_by_line', None)
++        ]
++        data_for_table.append(entry)
++
++    # Create a wandb.Table with corresponding columns
++    columns = ["id", "reward", "em", "f1", "ground_truth", "prediction", "trajectory", "trajectory_by_line"]
++    table = wandb.Table(data=data_for_table, columns=columns)
++    wandb.log({"infos": table, "final_em": em})
++
++    search_save()
++    wandb_run.finish()
+\ No newline at end of file
+diff --git a/models/llama.py b/models/llama.py
+old mode 100644
+new mode 100755
+diff --git a/models/openai.py b/models/openai.py
+old mode 100644
+new mode 100755
+diff --git a/prompts/cot_hotpotqa.txt b/prompts/cot_hotpotqa.txt
+old mode 100644
+new mode 100755
+diff --git a/prompts/cot_mmlu.txt b/prompts/cot_mmlu.txt
+old mode 100644
+new mode 100755
+diff --git a/prompts/cot_strategyqa.txt b/prompts/cot_strategyqa.txt
+old mode 100644
+new mode 100755
+diff --git a/prompts/io_hotpotqa.txt b/prompts/io_hotpotqa.txt
+old mode 100644
+new mode 100755
+diff --git a/prompts/io_mmlu.txt b/prompts/io_mmlu.txt
+old mode 100644
+new mode 100755
+diff --git a/prompts/io_strategyqa.txt b/prompts/io_strategyqa.txt
+old mode 100644
+new mode 100755
+diff --git a/prompts/react_hotpotqa_google.txt b/prompts/react_hotpotqa_google.txt
+old mode 100644
+new mode 100755
+diff --git a/prompts/react_mmlu_google.txt b/prompts/react_mmlu_google.txt
+old mode 100644
+new mode 100755
+diff --git a/prompts/react_strategyqa_google.txt b/prompts/react_strategyqa_google.txt
+old mode 100644
+new mode 100755
+diff --git a/requirements.txt b/requirements.txt
+old mode 100644
+new mode 100755
+diff --git a/tasks/__init__.py b/tasks/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/tasks/bamboogle.py b/tasks/bamboogle.py
+old mode 100644
+new mode 100755
+diff --git a/tasks/base.py b/tasks/base.py
+old mode 100644
+new mode 100755
+diff --git a/tasks/hotpotqa.py b/tasks/hotpotqa.py
+old mode 100644
+new mode 100755
+diff --git a/tasks/mmlu.py b/tasks/mmlu.py
+old mode 100644
+new mode 100755
+diff --git a/tasks/strategyqa.py b/tasks/strategyqa.py
+old mode 100644
+new mode 100755
+diff --git a/teaser.png b/teaser.png
+old mode 100644
+new mode 100755
+diff --git a/tools/__init__.py b/tools/__init__.py
+old mode 100644
+new mode 100755
+diff --git a/tools/search.py b/tools/search.py
+old mode 100644
+new mode 100755
+diff --git a/trajs/.gitkeep b/trajs/.gitkeep
+old mode 100644
+new mode 100755
+diff --git a/trajs/hotpotqa_dev_0_500_ft_gpt-3.5-turbo-0613_princeton-nlp__7woQRsdi_0.0_2023-09-21-16-19-51.json b/trajs/hotpotqa_dev_0_500_ft_gpt-3.5-turbo-0613_princeton-nlp__7woQRsdi_0.0_2023-09-21-16-19-51.json
+old mode 100644
+new mode 100755
+diff --git a/trajs/hotpotqa_dev_0_500_llama_models_lora_llama-2-13b-d_1000_0.7_2023-09-18-13-40-08.json b/trajs/hotpotqa_dev_0_500_llama_models_lora_llama-2-13b-d_1000_0.7_2023-09-18-13-40-08.json
+old mode 100644
+new mode 100755
+diff --git a/trajs/hotpotqa_dev_0_500_llama_models_lora_llama-2-7b-d_1000_0.7_2023-09-19-00-49-36.json b/trajs/hotpotqa_dev_0_500_llama_models_lora_llama-2-7b-d_1000_0.7_2023-09-19-00-49-36.json
+old mode 100644
+new mode 100755
