@@ -17,6 +17,7 @@ from peft import (
     get_peft_model,
     get_peft_model_state_dict,
 )
+from wandb_callback import WandbPredictionProgressCallback
 
 
 def train(
@@ -44,6 +45,7 @@ def train(
     group_by_length: bool = True,  # faster, but produces an odd training loss curve
     # other
     mask: bool = False,
+    report_to: str = "wandb"
 ):
     print(
         f"Training Alpaca-LoRA model with params:\n"
@@ -197,16 +199,16 @@ def train(
             num_train_epochs=num_epochs,
             learning_rate=learning_rate,
             fp16=True,
-            logging_steps=10,
+            logging_steps=1,
             evaluation_strategy="steps" if val_set_size > 0 else "no",
             save_strategy="steps",
-            eval_steps=200 if val_set_size > 0 else None,
-            save_steps=200,
+            save_steps=100,
             output_dir=output_dir,
             save_total_limit=3,
             load_best_model_at_end=True if val_set_size > 0 else False,
             ddp_find_unused_parameters=False if ddp else None,
             group_by_length=group_by_length,
+            report_to=report_to
         ),
         data_collator=transformers.DataCollatorForSeq2Seq(
             tokenizer, pad_to_multiple_of=8, return_tensors="pt", padding=True
@@ -216,6 +218,10 @@ def train(
 
     if torch.__version__ >= "2" and sys.platform != "win32":
         model = torch.compile(model)
+
+    if val_set_size > 0:
+        progress_callback = WandbPredictionProgressCallback(trainer, tokenizer, val_data, 2)
+        trainer.add_callback(progress_callback)
 
     trainer.train()
 
