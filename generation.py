@@ -14,6 +14,8 @@ from tasks import get_task
 from tools import call_tools
 from tools.search import search_save
 from datetime import datetime
+import wandb
+import os
 
 def get_fewshot_prompt(promptpath, task=None, chatgpt_format=False):
     if len(promptpath) == 0:
@@ -161,6 +163,7 @@ def run(task, idxs, gpts, evaluate=True, alpaca_format=False, chatgpt_format=Tru
                 
                 rs[idxs[i]] = r
                 infos[idxs[i]] = info
+                wandb.log(info)
         
         print(f"Time used for actions: {time.time() - old_time}", flush=True)
         prompts = [prompts[i] for i in range(len(prompts)) if i not in done_ids]
@@ -198,6 +201,8 @@ def parse_args():
 
 if __name__ == '__main__':
     args = parse_args()
+    wandb_run = wandb.init(project=os.environ.get("WANDB_PROJECT", "fireact"), config=args)
+    args = wandb.config
     print(args)
     task = get_task(args.task, args.task_split)
     
@@ -234,4 +239,24 @@ if __name__ == '__main__':
     em = sum(rs.values()) / len(idxs)
     print("em", em)
 
+    data_for_table = []
+    for id, info in infos.items():
+        entry = [
+            id, 
+            info.get('reward', None), 
+            info.get('em', None), 
+            info.get('f1', None), 
+            info.get('gt', None), 
+            info.get('pred', None),
+            info.get('traj', None),
+            info.get('traj_by_line', None)
+        ]
+        data_for_table.append(entry)
+
+    # Create a wandb.Table with corresponding columns
+    columns = ["id", "reward", "em", "f1", "ground_truth", "prediction", "trajectory", "trajectory_by_line"]
+    table = wandb.Table(data=data_for_table, columns=columns)
+    wandb.log({"infos": table, "final_em": em})
+
     search_save()
+    wandb_run.finish()
